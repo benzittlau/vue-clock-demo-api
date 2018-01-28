@@ -5,7 +5,7 @@ const app = express()
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/timezone[\/]:zone', (req, res) =>
-  res.send(moment().tz(req.params.zone).format('h:mma z'))
+  res.send(moment().tz(req.params.zone).format('h:mm:ssa z'))
 )
 
 
